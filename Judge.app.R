@@ -199,7 +199,7 @@ server <- function(input, output, session) {
     
     ggplot(plot_data, aes(x = DAY_WEEKNAME, y = accidents_per_100k, fill = FilterSet)) +
       geom_bar(stat = "identity", position = "dodge", color = "white") +
-      scale_fill_manual(values = c("Filter Set 1" = "#3366CC", "Filter Set 2" = "#DC3912")) +
+      scale_fill_manual(values = c("Filter Set 1" = "blue", "Filter Set 2" = "black")) +
       labs(title = "Accident Rate by Day of the Week (Comparison)",
            x = "Day of the Week",
            y = "Accidents per 100,000 Population") +
